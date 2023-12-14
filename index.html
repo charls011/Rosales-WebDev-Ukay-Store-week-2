@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothe Shop Order Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1> 👕 Ukay-Ukay Shop Order </h1>
+        <form method="POST" action="order.php">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="clothe">Clothe Type:</label>
+            <select id="clothe" name="clothe" required>
+                <option value="trousers">Trousers - ₱350.00</option>
+                <option value="t-shirts">T-shirts - ₱150.00</option>
+                <option value="shorts">Shorts - ₱120.00</option>
+                <option value="jackets">Jackets - ₱200.00</option>
+                <option value="jeans">Jeans - ₱250.00</option>
+            </select>
+
+            <div class="input-group">
+                <label>Size:</label>
+                <input type="radio" id="small" name="size" value="small" required>
+                <label for="small">S +₱0</label>
+
+                <input type="radio" id="medium" name="size" value="medium">
+                <label for="medium">M +₱0</label>
+
+                <input type="radio" id="large" name="size" value="large">
+                <label for="large">L +₱0</label>
+
+                <input type="radio" id="extra large" name="size" value="extra large">
+                <label for="extra large">XL +₱50</label>
+
+                <input type="radio" id="double extra large" name="size" value="double extra large">
+                <label for="double extra large">XXL +₱50</label>
+            </div>
+
+            <div class="input-group">
+                <label>Location:</label>
+                <input type="radio" id="luzon" name="location" value="luzon" required>
+                <label for="luzon">Luzon:+₱50</label>
+
+                <input type="radio" id="visayas" name="location" value="visayas">
+                <label for="visayas">Visayas:+₱100</label>
+
+                <input type="radio" id="mindanao" name="location" value="mindanao">
+                <label for="mindanao">Mindanao:+₱150</label>
+            </div>
+
+            <label for="notes"> Notes:</label>
+            <textarea id="notes" name="notes" rows="3"></textarea>
+            
+            <div class = 'center'>
+            <button type="submit">Place Order</button>
+            </div>
+
+        </form>
+    </div>
+    
+</body>
+
+</html>
